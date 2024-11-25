@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Exercício 1 - JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilização básica */
+        body {
+            background-color: #0000FF;
+            font: normal 20pt Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #FFFF00;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        /* Hover para destacar o título */
+        h1:hover {
+            color: red;
+            text-shadow: 3px 3px 10px #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Comentários explicativos -->
+    <h1>Olá Mundo</h1>
+    <p>Primeiros comandos JS na página!</p>
+
+    <script>
+        // Apresenta uma mensagem de alerta para o usuário
+        window.alert('Bem-vindo ao nosso site!');
+
+        // Confirmação simples para o usuário
+        var gostaDeFrutas = window.confirm('Você gosta de frutas?');
+
+        if (gostaDeFrutas) {
+            window.alert('Que bom! Frutas são saudáveis.');
+        } else {
+            window.alert('Tudo bem, mas considere experimentar novas frutas.');
+        }
+
+        // Solicita o nome do usuário e verifica se foi preenchido
+        var nome = window.prompt('Por favor, digite seu nome:');
+
+        if (nome) {
+            window.alert('Olá, ' + nome + '! É um prazer conhecer você!');
+        } else {
+            window.alert('Você não digitou seu nome. Que pena!');
+        }
+    </script>
+</body>
+
+</html>

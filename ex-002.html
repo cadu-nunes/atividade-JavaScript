@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Exercício 1 - JavaScript</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #0000FF;
+            font: normal 20pt Arial, sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #FFFF00;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Primeiros comandos JS na página!</p>
+
+    <script>
+        // Solicita informações ao usuário
+        var nome = window.prompt('Digite seu nome:');
+        var idade = window.prompt('Digite sua idade:');
+        var cpf = window.prompt('Digite seu CPF:');
+
+        // Valida se todas as informações foram preenchidas
+        if (nome && idade && cpf) {
+            // Exibe as informações organizadas
+            window.alert('Informações do usuário:\n\n' +
+                'Nome: ' + nome + '\n' +
+                'Idade: ' + idade + '\n' +
+                'CPF: ' + cpf);
+        } else {
+            // Mensagem caso o usuário deixe algum campo vazio
+            window.alert('Você não preencheu todas as informações.');
+        }
+    </script>
+</body>
+
+</html>
